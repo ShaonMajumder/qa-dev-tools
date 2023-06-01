@@ -1,8 +1,8 @@
-const getElementByXPath = (path) => {
+export const getElementByXPath = (path) => {
   return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 };
 
-const getElementsByXPath = (xpathToExecute) => {
+export const getElementsByXPath = (xpathToExecute) => {
 	const result = [];
 	const nodesSnapshot = document.evaluate(xpathToExecute, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
 	for (let i = 0; i < nodesSnapshot.snapshotLength; i++) {
@@ -11,7 +11,7 @@ const getElementsByXPath = (xpathToExecute) => {
 	return result;
 };
 
-const changeHTMLText = () => {
+export const changeHTMLText = () => {
 	const XPATH = prompt("Please enter your XPath", "");
 	const message = prompt("Please enter your message", "");
 
