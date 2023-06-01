@@ -1,0 +1,14 @@
+{
+    "name": "qa-dev-tools",
+    "version": "1.0.6",
+    "description": "This package gives you some methods to access dom elements by their dev. expressions.",
+    "main": "shaonutil.js",
+    "repository": "https://github.com/ShaonMajumder/qa-dev-tools.git",
+    "author": "Shaon Majumder <smazoomder@gmail.com>",
+    "license": "MIT",
+    "keywords": [
+      "json",
+      "formdata"
+    ],
+    "homepage": "https://github.com/ShaonMajumder"
+  }
